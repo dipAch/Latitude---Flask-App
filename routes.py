@@ -2,6 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# Connect to the Database.
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://localhost/learningflask"
 
 @app.route("/")
